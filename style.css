@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: repeat(3, 100px);
+    width: 300px;
+    height: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: deeppink;
+    border-radius: 12px;
+}
+
+.counter {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3;
+    font-size: 25px;
+}
+
+.button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: pink;
+}
+
+.increment {
+    border-radius: 0 0 0 12px;
+}
+
+.decrement {
+    border-radius: 0 0 12px 0;
+}
