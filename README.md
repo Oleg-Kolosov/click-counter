@@ -1,6 +1,16 @@
-# Click counter
+# MVC.js
 
-[watch demo](https://oleg-kolosov.github.io/click-counter/)
+### Simple todo app via MVC & Bootstrap
+
+[watch demo]()
+
+### Purpose
+
+Learn MVC pattern with Javascript
+
++ Model - manages the data of an application
++ View - a visual representation of the model
++ Controller - links the user and the system
 
 ### Author
 
