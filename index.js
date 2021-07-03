@@ -1,16 +1,20 @@
-const counter = document.querySelector('.counter');
-const container = document.querySelector('.container');
-
 let value = 0;
 
-container.addEventListener('click', event => {
-    if (event.target.classList.contains('increment')) {
-        value++;
-    } else if (event.target.classList.contains('decrement')) {
-        value--;
-    } else if (event.target.classList.contains('reset')) {
-        value = 0;
-    }
+const counter = document.getElementById('counter');
+const groupButtons = document.getElementById('group-buttons');
 
-    counter.innerHTML = value;
+counter.innerText = value;
+
+groupButtons.addEventListener('click', e => {
+    if (e.target.id === 'decrease') {
+        if (value === 0) return;
+        value -= 1;
+        counter.innerText = value;
+    } else if (e.target.id === 'reset') {
+        value = 0;
+        counter.innerText = value;
+    } else if (e.target.id === 'increase') {
+        value += 1;
+        counter.innerText = value;
+    }
 });
