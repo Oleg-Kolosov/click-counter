@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="index.js" defer></script>
-        <title>Click counter</title>
-    </head>
-    <body>
-        <div class="container">
-            <p class="counter"></p>
-            <p class="button increment">+</p>
-            <p class="button reset">reset</p>
-            <p class="button decrement">-</p>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <title>Click counter</title>
+</head>
+
+<body class="h-screen flex justify-center items-center ">
+    <div class="flex flex-col justify-center items-center w-96 rounded-xl p-5 border-solid border-4 border-gray-100 shadow-xl">
+        <h1 class="mb-5 font-bold text-xl text-green-700">Click counter</h1>
+        <p id="counter" class="mb-5 text-green-600">0</p>
+        <div id="group-buttons" class="flex w-full justify-around">
+            <button type="button" id="decrease"
+                class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700           disabled:opacity-50">
+                Decrease
+            </button>
+            <button type="button" id="reset"
+                class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700           disabled:opacity-50">
+                Reset
+            </button>
+            <button type="button" id="increase"
+                class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700           disabled:opacity-50">
+                Increase
+            </button>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
